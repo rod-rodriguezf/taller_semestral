@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}
+  <title>Cambio Aceite</title>
+{% endblock  %}
+
+
+  <!--========================================================== -->
+  <!--GALERIA MANTENCIONES-->
+  <!--========================================================== -->
+  {% block mantencion1 %}
+      <div id="tarjetas" class="border-top border-2">
+    <div class="mapa">
+      <main id="nose">
+        <div class="card" style="width: 18rem;" id="mantenciones">
+          <img src="{% static 'img/cambio_aceite.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cambio de aceite mas filtro</h5>
+            <p class="card-text">El vehiculo se encontraba con el cambio de aceite y filtro en malas condiciones, siendo
+              esto algo perjudicial para el motor del mismo.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Fecha: 2 Diciembre 2020 </li>
+            <li class="list-group-item">Mecanico a cargo: Israel Santander Toro</li>
+            <li class="list-group-item">Materiales usados: Aceite Mobil 1 10/50 , filtro de aceite 30/21 original.</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  {% endblock  %}
+
+  <!--========================================================== -->
+  <!--GALERIA DE LAS MANTECIONES-->
+  <!--========================================================== -->
+{% block galeria1 %}
+    <section id="galeria" class="container">
+    <div class="text-center text-dark pt-5">
+      <h1 class="fw-bold">Galeria</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellendus, facere voluptatem ipsa
+        cum quasi est in natus fugit commodi aliquid incidunt perferendis accusantium rem eius nisi a itaque
+        aspernatur.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="{% static 'img/cambio_aceite.jpg' %}" data-lightbox="mecanicos">
+          <img src="{% static 'img/cambio_aceite.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="{% static 'img/cambio_aceite_2.jpg' %}" data-lightbox="mecanicos">
+          <img src="{% static 'img/cambio_aceite_2.jpg' %}" alt="">
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a href="{% static 'img/cambio_aceite_3.jpg' %}" data-lightbox="mecanicos">
+          <img src="{% static 'img/cambio_aceite_3.jpg' %}" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+{% endblock  %}

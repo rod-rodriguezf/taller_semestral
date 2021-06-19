@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+  <title>Registrarse</title>
+{% endblock  %}
+
+
+
+  <!--========================================================== -->
+  <!-- CONTENEDOR DEL FORMULARIO -->
+  <!--========================================================== -->
+{% block formulario2 %}
+    <div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+    <div class="text-center mb-4" id="titulo-formulario">
+      <div><img src="{% static 'img/support.png' %}" alt="" class="img-fluid ps-5"></div>
+      <h2>Registra tu usuario</h2>
+      <p class="fs-5">Estamos aqui para solucionar tus problemas</p>
+    </div>
+
+
+
+    <form action="">
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+      </div>
+
+
+      <div class="mb-3">
+        <input type="input" class="form-control" id="nombre" placeholder="Nombre y Apeliido">
+      </div>
+
+
+      <div class="mb-3">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+      </div>
+
+      <div class="mb-3">
+        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
+      </div>
+
+      <div class="mb-3">
+        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Comfirme password">
+      </div>
+
+
+      <div class="mb-3">
+        <button type="button" class=" btn btn-primary w-100 fs-5">Crear Usuario</button>
+      </div>
+    </form>
+
+  </div>
+{% endblock  %}
