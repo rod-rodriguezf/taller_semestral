@@ -32,3 +32,7 @@ def mantencion5(request):
 
 def mantencion6(request):
     return render(request, "mantencion6.html")
+
+def repuestos(request):
+    return render(request, "repuestos.html")
+

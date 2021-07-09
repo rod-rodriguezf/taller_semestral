@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import index, trabajos, registrarse, iniciarSesion, mantencion1, mantencion2, mantencion3, mantencion4, mantencion5, mantencion6
+from .views import index, trabajos, registrarse, iniciarSesion, mantencion1, mantencion2, mantencion3, mantencion4, mantencion5, mantencion6, repuestos
 
 urlpatterns = [
     path('', index, name="INDEX"),
@@ -13,4 +13,5 @@ urlpatterns = [
     path('mantencion4/', mantencion4, name="MANTENCION4"),
     path('mantencion5/', mantencion5, name="MANTENCION5"),
     path('mantencion6/', mantencion6, name="MANTENCION6"),
+    path('repuestos/', repuestos, name="REPU"),
 ]

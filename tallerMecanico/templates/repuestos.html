@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+<title>Reparacion neumatico</title>
+{% endblock %}
+
+
+
+<!--========================================================== -->
+<!-- CONTENEDOR DEL FORMULARIO -->
+<!--========================================================== -->
+{% block formulario1 %}
+<div class="container  border-top border-primary " style="max-width: 500px" id="contenedor-formulario">
+    <div class="text-center mb-4" id="titulo-formulario">
+        <div><img src="{% static 'img/iniciar.jpg' %}" alt="" class="img-fluid ps-5"></div>
+        <h2>Agregar Repuestos</h2>
+        <p class="fs-5">Estamos aqui para solucionar tus problemas</p>
+    </div>
+
+
+
+    <form action="" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="txtNombre" placeholder="Nombre Repuesto">
+        </div>
+        <div class="mb-3">
+            <input type="number" class="form-control" id="txtPrecio" placeholder="Precio Producto">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="formFileLg" class="form-label"></label>
+            <input class="form-control form-control-lg" id="txtImg" name="txtImg" type="file">
+        </div>
+        <div class="mb-3">
+            <label for="txtDesc" class="form-label">Descripcion</label>
+            <textarea class="form-control" id="txtDesc" name="txtDesc" rows="3"></textarea>
+        </div>
+
+
+        <div class="mb-3">
+            <button type="submit" class=" btn btn-primary w-100 fs-5">Agregar Repuesto</button>
+        </div>
+    </form>
+
+</div>
+{% endblock %}
+<!--========================================================== -->
+<!--GALERIA DE LAS MANTENCIONES-->
+<!--========================================================== -->
+{% block galeria1 %}
+<section id="galeria" class="container">
+    <div class="text-center text-dark pt-5">
+        <h1 class="fw-bold">Repuestos en Venta</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellendus, facere voluptatem ipsa
+            cum quasi est in natus fugit commodi aliquid incidunt perferendis accusantium rem eius nisi a itaque
+            aspernatur.</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="{% static 'img/reparacion_neumatico.jpg' %}" data-lightbox="mecanicos">
+                <img src="{% static 'img/reparacion_neumatico.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="{% static 'img/reparacion_neumatico_2.jpg' %}" data-lightbox="mecanicos">
+                <img src="{% static 'img/reparacion_neumatico_2.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a href="{% static 'img/reparacion_neumatico_3.jpg' %}" data-lightbox="mecanicos">
+                <img src="{% static 'img/reparacion_neumatico_3.jpg' %}" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
